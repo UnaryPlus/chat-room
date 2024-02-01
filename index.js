@@ -33,7 +33,7 @@ io.on("connection", (socket) => {
   })
 
   socket.on("disconnect", () => {
-    io.to(socket.channel).emit("disconnect", socket.name)
+    io.to(socket.channel).emit("disconnection", socket.name)
   })
 })
 
